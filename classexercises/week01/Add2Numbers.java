@@ -1,6 +1,6 @@
 public class Add2Numbers
 {
-    public static void main(String[] args)
+    public static void main()
     {
         int i, j, k;
         i = 10;
