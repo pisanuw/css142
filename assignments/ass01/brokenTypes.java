@@ -13,9 +13,9 @@ public class brokenTypes
         return sum;
     }
     
-    public static MISSING getVelocity(MISSING speed, MISSING time)
+    public static MISSING getVelocity(MISSING distance, MISSING time)
     {
-        MISSING velocity = speed / time;
+        MISSING velocity = distance / time;
         return velocity;
     }
     
