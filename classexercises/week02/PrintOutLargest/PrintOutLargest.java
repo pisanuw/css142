@@ -7,14 +7,22 @@
  */
 public class PrintOutLargest
 {
-    public static void largestOf3(int a, int b, int c)
+    public static int largestOf3(int a, int b, int c)
     {
+        if ((a >= b) && (a >= c))
+            return a;
+        else if (b >= c)
+            return b;
+        else
+            return c;
     }
-    
+
     public static void main()
     {
-        largestOf3(10, 20, 30);
-        largestOf3(5, 3, 1);
-        largestOf3(1, 7, 2);
+        int max = largestOf3(10, 5, 4);
+        System.out.println("The largest number is: " + max);
+        assert (  largestOf3(10, 5, 4) == 10 );
+        assert (  largestOf3(10, 5, 5) == 10 );
+        assert (  largestOf3(5, 5, 7) == 7 );
     }
 }
