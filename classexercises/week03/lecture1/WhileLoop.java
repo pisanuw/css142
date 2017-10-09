@@ -65,5 +65,12 @@ public class WhileLoop
         assert(sumToN(3) == 6);
         assert(sumToN(5) == 15);
         //assert(sumToN(100) == (100 * 101 / 2));
+        int x = 10;
+        int y = 20;
+        int z = x + y;
+        System.out.printf("Adding %d and %d gets me %d\n", x, y, z);
+        double xd = 25.345678;
+        System.out.printf("xd with to 2 decimal places %.2f\n", xd);
+        System.out.printf("xd with to 4 decimal places %.4f\n", xd);
     }
 }
