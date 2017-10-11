@@ -32,11 +32,34 @@ public class StarterClass
         return total;
     }
 
+    public static void oddNumbersBetween(int m, int n)
+    {
+        for (int i = m+1; i < n; i++)
+        {
+            if (isOdd(i))
+                System.out.println(i);
+        }
+    }
+
+    public static void stars(int n)
+    {
+        for (int i = 1; i <= n; i++)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args)
     {
         //oddNumbersUptoN(15);
-        int theSum = sumOfoddNumbersUptoN(10);
-        System.out.println(theSum);
+        //int theSum = sumOfoddNumbersUptoN(10);
+        //System.out.println(theSum);
+        //oddNumbersBetween(5, 100);
+        stars(5);
         System.out.println("Done!");
     }
 }
