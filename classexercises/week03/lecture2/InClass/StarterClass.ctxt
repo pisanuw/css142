@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=StarterClass
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ StarterClass\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=n
+comment1.target=boolean\ isOdd(int)
+comment2.params=n
+comment2.target=void\ oddNumbersUptoN(int)
+comment3.params=n
+comment3.target=int\ sumOfoddNumbersUptoN(int)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5
