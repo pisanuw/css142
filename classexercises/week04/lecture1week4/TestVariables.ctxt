@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=TestVariables
+comment1.params=
+comment1.target=void\ tooHighOrNot()
+comment2.params=
+comment2.target=void\ testIf()
+comment3.params=
+comment3.target=void\ testScanner()
+comment4.params=
+comment4.target=void\ testIncrement()
+comment5.params=
+comment5.target=void\ testFunction()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7
