@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=PlusMinusExample
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ PlusMinusExample\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=characters
+comment1.target=void\ plusMinusPattern(int)
+comment2.params=height\ width
+comment2.target=void\ plusMinusTree(int,\ int)
+numComments=3
