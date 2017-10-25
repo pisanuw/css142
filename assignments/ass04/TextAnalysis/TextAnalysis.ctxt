@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TextAnalysis
+comment1.params=message\ c
+comment1.target=int\ countChar(java.lang.String,\ char)
+comment2.params=message
+comment2.target=void\ analyzeLine(java.lang.String)
+comment3.params=
+comment3.target=void\ printAlphabet()
+comment4.params=
+comment4.target=void\ textAnalysis()
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6
