@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Increase
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Increase\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=number
+comment1.target=void\ increaseBy1(int)
+comment2.params=numbers
+comment2.target=void\ increaseArrayBy1(int[])
+comment3.params=
+comment3.target=void\ testIt()
+numComments=4
