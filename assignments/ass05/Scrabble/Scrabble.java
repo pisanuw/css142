@@ -71,7 +71,7 @@ public class Scrabble
      * For example, given tileHistogram "abe"
      * { 1,1,0,0,1,0, ... }
      * We can form the word "ab" which has a histogram of
-     * { 1,0,0,0,0,0, ... }
+     * { 1,1,0,0,0,0, ... }
      * But we cannot form the word "abb" which has a histogram of
      * { 1,2,0,0,0,0, ... }
      */
