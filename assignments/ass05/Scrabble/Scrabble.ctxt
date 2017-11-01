@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Scrabble
+comment1.params=filename
+comment1.target=int\ countLines(java.lang.String)
+comment1.text=\n\ Counts\ the\ number\ of\ lines\ for\ the\ given\ file\n
+comment2.params=filename
+comment2.target=java.lang.String[]\ readWordList(java.lang.String)
+comment2.text=\n\ Read\ all\ the\ words\ in\ the\ given\ file\ and\ return\ them\n\ in\ a\ String\ array.\n\ Uses\ countLines\ to\ figure\ out\ the\ how\ big\ the\ array\n\ of\ words\ has\ to\ be\n
+comment3.params=
+comment3.target=java.lang.String\ getUserTiles()
+comment3.text=\n\ Gets\ a\ String\ from\ user\ via\ keyboard\ representing\ the\ Scrabble\ tiles\n\ The\ String\ has\ to\ be\ all\ lowercase\ and\ needs\ to\ have\ 7\ letters\n
+comment4.params=str
+comment4.target=int[]\ getHistogram(java.lang.String)
+comment4.text=\n\ Creates\ a\ histogram\ for\ the\ given\ string\n\ Histogram\ shows\ how\ many\ times\ each\ letter\ appears\ in\ string\n\ The\ histogram\ is\ always\ an\ integer\ array\ with\ length\ 26\ where\n\ histogram[0]\ represents\ how\ many\ times\ 'a'\ appears\n\ histogram[1]\ represents\ how\ many\ times\ 'b'\ appears\n\ ...\n\ histogram[25]\ represents\ how\ many\ times\ 'z'\ appears\n\ The\ histogram\ for\ "age"\ would\ be\n\ {\ 1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\ }\n\ The\ histogram\ for\ "azzz"\ would\ be\n\ {\ 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3\ }\n
+comment5.params=tileHistogram\ wordHistogram
+comment5.target=boolean\ canMakeWord(int[],\ int[])
+comment5.text=\n\ Given\ two\ histograms\ representing\ user\ tiles\ and\ dictionary\ word\n\ return\ true\ if\ the\ dictionary\ word\ can\ be\ formed\ from\ the\ tiles\n\ For\ each\ letter\ in\ wordHistogram,\ we\ need\ to\ have\ at\ least\ that\ many\ tiles\n\ tileHistogram\ and\ wordHistogram\ are\ both\ length\ 26\n\ For\ example,\ given\ tileHistogram\ "abe"\n\ {\ 1,1,0,0,1,0,\ ...\ }\n\ We\ can\ form\ the\ word\ "ab"\ which\ has\ a\ histogram\ of\n\ {\ 1,0,0,0,0,0,\ ...\ }\n\ But\ we\ cannot\ form\ the\ word\ "abb"\ which\ has\ a\ histogram\ of\n\ {\ 1,2,0,0,0,0,\ ...\ }\n
+comment6.params=
+comment6.target=void\ findWords()
+comment6.text=\n\ Read\ the\ Scrabble\ dictionary\n\ Get\ user\ tiles\ (7\ characters\ long)\n\ Find\ and\ print\ all\ the\ words\ that\ can\ be\ made\ from\ the\ given\ tiles\n
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8
