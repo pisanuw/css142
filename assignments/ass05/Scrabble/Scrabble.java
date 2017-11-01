@@ -48,7 +48,8 @@ public class Scrabble
      * The histogram is always an integer array with length 26 where
      * histogram[0] represents how many times 'a' appears
      * histogram[1] represents how many times 'b' appears
-     * and so on
+     * ...
+     * histogram[25] represents how many times 'z' appears
      * The histogram for "age" would be
      * { 1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
      * The histogram for "azzz" would be
@@ -57,7 +58,7 @@ public class Scrabble
     public static int[] getHistogram(String str)
     {
         // System.out.println("Getting histogram for " + str);
-        int histogram[] = new int[27];
+        int histogram[] = new int[26];
         // to be completed
         return histogram;
     }
