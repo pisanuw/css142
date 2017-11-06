@@ -27,7 +27,7 @@ public class TicTacToe
             System.out.println(board[row][0] + "|" + board[row][1] + "|" + board[row][2]);
         }
     }
-    
+
     public static int getUserInputWithPromptRecursive(String msg)
     {
         System.out.print(msg);
@@ -43,7 +43,7 @@ public class TicTacToe
             return value;
         }
     }
-    
+
     public static int getUserInputWithPrompt(String msg)
     {
         System.out.print(msg);
@@ -57,24 +57,65 @@ public class TicTacToe
         }
         return value;
     }
-    
-    public static void play(char[][] board, int row, int col, char mark)
+
+    public static boolean play(char[][] board, int row, int col, char mark)
     {
-        board[row][col] = mark;
+        if (board[row][col] == ' ')
+        {
+            board[row][col] = mark;
+            return true;
+        }
+        else
+        {
+            System.out.println("Invalid play!!!");
+            return false;
+        }
+
+    }
+
+    public static boolean hasEmptySpace(char[][] board)
+    {
+        for (int row = 0; row < board.length; row++)
+        {
+            for (int col = 0; col < board[row].length; col++)
+            {
+                // 
+                if (board[row][col] == ' ')
+                    return true;
+            }
+        }
+        return false;
+    }
+    
+    public static boolean checkIfUserWon(char[][] board, char currentUser)
+    {
+        return false;
     }
     public static void playTicTacToe()
     {
         char[][] board = new char[3][3];
         System.out.println("Welcome to TicTacToe");
         resetBoard(board);
-        board[1][1] = 'X';
-        for (int count = 0; count < 9; count++)
+        char currentUser = 'X';
+        boolean gameNotWonYet = true;
+        while(hasEmptySpace(board) && gameNotWonYet)
         {
             displayBoard(board);
+            System.out.println("User " + currentUser + " is playing.");
             int row = getUserInputWithPrompt("Enter row number (0-2):" );
             int col = getUserInputWithPrompt("Enter column number (0-2):" );
-            play(board, row, col, 'X');
+            boolean successfullyPlayed = play(board, row, col, currentUser);
+            if (successfullyPlayed)
+            {
+                gameNotWonYet = checkIfUserWon(board, currentUser);
+                if (currentUser == 'X')
+                    currentUser = 'O';
+                else
+                    currentUser = 'X';
+            }
+            
         }
-
+        displayBoard(board);
+        System.out.println("Thank you for playing TicTacToe");
     }
 }

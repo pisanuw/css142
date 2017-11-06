@@ -7,6 +7,22 @@
  */
 public class AlienTester
 {
+    public static void testConstructors()
+    {
+        Alien ziggy = new Alien(2, 1, 2);
+        ziggy.describe();
+        ziggy.languageQuirk = "zzzz";
+        String msg = "Hello World! I have come to learn Java!";
+        ziggy.say(msg);
+        
+        Alien piggy = new Alien(2, 1, 2);
+        piggy.languageQuirk = "pp";
+        piggy.say(msg);
+        
+        Alien.alienPropaganda();
+        
+    }
+    
     public static void main(String[] args)
     {
         Alien spot = new Alien();
