@@ -13,7 +13,7 @@ public class Person
 {
     String name;
     int luckyNumber;
-
+    
     Person()
     {
     }
@@ -78,6 +78,35 @@ public class Person
                 System.out.println("The winner is " + p.name);
         }        
     }
+    public static void closest(Person[] personArr, int winningNumber)
+    {
+        Person p = personArr[0];
+        int minDistance = Math.abs(winningNumber - p.luckyNumber);
+        String winners = p.name;
+        
+        for (int i = 1; i < personArr.length; i++)
+        {
+            p = personArr[i];
+            if (p != null)
+            {
+                int distance = Math.abs(winningNumber -  p.luckyNumber);
+                if (distance < minDistance)
+                {
+                    minDistance = distance;
+                    winners = p.name;
+                }
+                else if (distance == minDistance)
+                {
+                    winners = winners + " " + p.name;
+                } 
+                else
+                {
+                    // not a winner
+                }
+            }
+        }
+        System.out.println("Winners are " + winners);
+    }
     
     public static void testPerson()
     {
@@ -92,5 +121,9 @@ public class Person
         for (Person z: lotteryPeople)
             System.out.println(z);
         lucky(lotteryPeople, 666);
+        System.out.println("Checking closest");
+        closest(lotteryPeople, 700);
+        System.out.println("Checking closest again");
+        closest(lotteryPeople, 17);
     }
 }
