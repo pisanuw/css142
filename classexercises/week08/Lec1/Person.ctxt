@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Person
+comment1.params=
+comment1.target=Person()
+comment2.params=givenName\ givenNumber
+comment2.target=Person(java.lang.String,\ int)
+comment3.params=someName
+comment3.target=void\ setName(java.lang.String)
+comment4.params=num
+comment4.target=void\ setLuckyNumber(int)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment6.params=filename
+comment6.target=Person[]\ readPeople(java.lang.String)
+comment7.params=personArr\ winningNumber
+comment7.target=void\ lucky(Person[],\ int)
+comment8.params=
+comment8.target=void\ testPerson()
+numComments=9

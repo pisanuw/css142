@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Prep
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Prep\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=index\ a\ numberUsed
+comment1.target=int\ smallest(int,\ int[],\ int)
+comment2.params=index\ a\ numberUsed
+comment2.target=int\ indexOfSmallest(int,\ int[],\ int)
+comment3.params=
+comment3.target=void\ indexTest()
+numComments=4
