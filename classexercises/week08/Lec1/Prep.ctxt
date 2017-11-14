@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Prep
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Prep\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ Prep\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=index\ a\ numberUsed
 comment1.target=int\ smallest(int,\ int[],\ int)
 comment2.params=index\ a\ numberUsed
@@ -11,6 +11,8 @@ comment4.params=arr
 comment4.target=void\ largest2(int[])
 comment5.params=arr
 comment5.target=void\ arrayWithoutSmallest(int[])
-comment6.params=
-comment6.target=void\ indexTest()
-numComments=7
+comment6.params=arr
+comment6.target=void\ arrayWithoutSmallestversion2(int[])
+comment7.params=
+comment7.target=void\ indexTest()
+numComments=8

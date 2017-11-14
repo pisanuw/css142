@@ -118,6 +118,49 @@ public class Prep
         }
         for (int i: shortArr)
             System.out.print(i + " ");
+        System.out.println();
+    }
+    
+    public static void arrayWithoutSmallestversion2(int[] arr)
+    {
+        int minValue = arr[0];
+        for (int i = 0; i < arr.length; i++)
+        {
+            if (arr[i] < minValue)
+                minValue = arr[i];
+        }
+        // have minValue;
+        int[] shortArr = new int[arr.length - 1];
+        int shortIndex = 0;
+        boolean haveSkipped = false;
+        for (int index = 0; index < arr.length; index++)
+        {
+            if (arr[index] != minValue)
+            {
+                // not minimum, just copy
+                shortArr[shortIndex] = arr[index];
+                shortIndex++;
+            }
+            else
+            {
+                // we are looking at minvalue
+                if (haveSkipped)
+                {
+                    // already skipped, keep copying
+                    shortArr[shortIndex] = arr[index];
+                    shortIndex++;
+                }
+                else
+                {
+                    // time to skip
+                    // not increasing shortIndex
+                    haveSkipped = true;
+                }
+            }
+        }
+        for (int i: shortArr)
+            System.out.print(i + " ");
+        System.out.println();
     }
 
     public static void indexTest()
@@ -128,7 +171,10 @@ public class Prep
             n + " is " +
             sample[n]);
             
+        System.out.println("Test arrayWithoutSmallest class version");
         arrayWithoutSmallest(sample);
+        System.out.println("Test arrayWithoutSmallest after class version");
+        arrayWithoutSmallestversion2(sample);
         
         largest2(sample);
         System.out.println("Test swap");
