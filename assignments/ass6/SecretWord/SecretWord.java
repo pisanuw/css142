@@ -64,13 +64,6 @@ public class SecretWord
         return 'a';
     }
 
-    // number of guesses left
-    int guessesLeft()
-    {
-        // TODO
-        return 10;
-    }
-
     // play the SecretWord game
     void play()
     {
@@ -78,7 +71,7 @@ public class SecretWord
         while ((badGuesses < maxGuesses) && (! gotAllLetters()))
         {
             displaySecretWithBlanks();
-            System.out.println(guessesLeft() + " guesses left");;
+            System.out.println(maxGuesses - badGuesses + " guesses left");;
             char letter = promptAndGetLetter();
             if (letterInSecretWord(letter))
             {
