@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Registrar
+comment1.params=prompt
+comment1.target=int\ getChoice(java.lang.String)
+comment2.params=prompt
+comment2.target=java.lang.String\ getString(java.lang.String)
+comment3.params=
+comment3.target=void\ mainMenu()
+comment4.params=uni
+comment4.target=void\ universityMenu(University)
+comment5.params=uni
+comment5.target=void\ addCourse(University)
+comment6.params=uni
+comment6.target=void\ enrollAStudent(University)
+comment7.params=uni
+comment7.target=void\ registerStudentForCourse(University)
+comment8.params=uni
+comment8.target=void\ listStudentsInCourse(University)
+comment9.params=args
+comment9.target=void\ main(java.lang.String[])
+numComments=10
