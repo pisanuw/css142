@@ -24,7 +24,6 @@ public class Registrar
     // prompt user for String and return it
     private static String getString(String prompt)
     {
-        Scanner in = new Scanner(System.in);
         System.out.print(prompt);
         String str = keyboard.next();
         return str;
