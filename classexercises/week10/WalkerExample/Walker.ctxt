@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Walker
+comment1.params=
+comment1.target=void\ clearScreen()
+comment10.params=size
+comment10.target=void\ printBlanks(int)
+comment11.params=
+comment11.target=void\ printScreen()
+comment2.params=numMilliseconds
+comment2.target=void\ wait(int)
+comment3.params=newSymbol
+comment3.target=Walker(char)
+comment4.params=milliseconds
+comment4.target=void\ setWaitTime(int)
+comment5.params=steps
+comment5.target=void\ moveUp(int)
+comment6.params=steps
+comment6.target=void\ moveDown(int)
+comment7.params=steps
+comment7.target=void\ moveRight(int)
+comment8.params=steps
+comment8.target=void\ moveLeft(int)
+comment9.params=size
+comment9.target=void\ printStars(int)
+numComments=12
