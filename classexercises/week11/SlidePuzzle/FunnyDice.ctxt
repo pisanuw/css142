@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=FunnyDice
+comment1.params=numSides
+comment1.target=FunnyDice(int)
+comment2.params=sideNumber\ sideValue
+comment2.target=void\ setSide(int,\ int)
+comment3.params=sideValues
+comment3.target=void\ setSide(int[])
+comment4.params=
+comment4.target=int\ roll()
+comment5.params=
+comment5.target=void\ testFunnyDice()
+numComments=6

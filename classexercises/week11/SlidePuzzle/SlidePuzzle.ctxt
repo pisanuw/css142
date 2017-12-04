@@ -1,9 +1,17 @@
 #BlueJ class context
 comment0.target=SlidePuzzle
-comment1.params=arr
-comment1.target=void\ shuffle(int[])
-comment2.params=arr
-comment2.target=void\ shuffle2D(int[][])
+comment1.params=
+comment1.target=SlidePuzzle()
+comment2.params=
+comment2.target=void\ setBlankRowCol()
 comment3.params=
-comment3.target=void\ testShuffle()
-numComments=4
+comment3.target=void\ play()
+comment4.params=arr
+comment4.target=void\ shuffle2D(int[][])
+comment4.text=\r\n\ \ \ \ public\ static\ void\ shuffle(int\ arr[])\r\n\ \ \ \ {\r\n\ \ \ \ //\ shuffle\ the\ numbers\r\n\ \ \ \ Random\ rand\ \=\ new\ Random();\r\n\ \ \ \ for\ (int\ i\ \=\ 0;\ i\ <\ arr.length;\ i++)\r\n\ \ \ \ {\r\n\ \ \ \ int\ randomIndex\ \=\ rand.nextInt(arr.length);\r\n\ \ \ \ //\ System.out.println("Value\ at\ "\ +\ randomIndex\ +\ "\ is\ "\ +\ arr[randomIndex]);\r\n\ \ \ \ //\ System.out.println("Swapping\ it\ with\ index\ "\ +\ i\ +\ "\ with\ value\ "\ +\ arr[i]);\r\n\ \ \ \ int\ savedValue\ \=\ arr[i];\r\n\ \ \ \ arr[i]\ \=\ arr[randomIndex];\r\n\ \ \ \ arr[randomIndex]\ \=\ savedValue;\r\n\ \ \ \ }\r\n\ \ \ \ }\r\n
+comment5.params=
+comment5.target=void\ display()
+comment5.text=\r\n\ \ \ \ public\ static\ void\ testShuffle()\r\n\ \ \ \ {\r\n\ \ \ \ int\ board[]\ \=\ {\ 10,\ 20,\ 30,\ 40,\ 50,\ 60,\ 70,\ 80};\r\n\ \ \ \ shuffle(board);\r\n\ \ \ \ for\ (int\ i\ \=\ 0;\ i\ <\ board.length;\ i++)\r\n\ \ \ \ System.out.print(board[i]\ +\ "\ ");\r\n\ \ \ \ System.out.println();\r\n\ \ \ \ int\ slide[][]\ \=\ {\ {\ 1,\ 2,\ 3},\ \r\n\ \ \ \ {4,\ 5,\ 6}\ ,\ \r\n\ \ \ \ {7,\ 8,\ 0}\ };\r\n\ \ \ \ //shuffle2D(slide);\r\n\ \ \ \ for\ (int\ i\ \=\ 0;\ i\ <\ 3;\ i++)\r\n\ \ \ \ {\r\n\ \ \ \ System.out.println(slide[i][0]\ +\ "\ "\ +\ \r\n\ \ \ \ slide[i][1]\ +\ "\ "\ +\r\n\ \ \ \ slide[i][2]);\r\n\ \ \ \ }\r\n\ \ \ \ }\r\n
+comment6.params=
+comment6.target=void\ testSlidePuzzle()
+numComments=7
