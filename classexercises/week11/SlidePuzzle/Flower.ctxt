@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Flower
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Flower\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=name
+comment1.target=Flower(java.lang.String)
+comment2.params=newName
+comment2.target=void\ setName(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment4.params=newPrice
+comment4.target=void\ setPrice(double)
+comment5.params=
+comment5.target=double\ getPrice()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

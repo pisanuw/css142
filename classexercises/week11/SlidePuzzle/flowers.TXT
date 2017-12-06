@@ -1,0 +1,10 @@
+red
+3.0
+yellow
+4
+blue
+10
+some name
+12
+fuschia
+50
